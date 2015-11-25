@@ -11,6 +11,7 @@
     <properties>
         <junit.version>3.8.1</junit.version>
         <cucumber.version>1.2.2</cucumber.version>
+        <twitter4j.version>[4.0,)</twitter4j.version>
     </properties>
 
     <dependencies>
@@ -39,6 +40,19 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Twitter4j -->
+        <dependency>
+            <groupId>org.twitter4j</groupId>
+            <artifactId>twitter4j-core</artifactId>
+            <version>${twitter4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
